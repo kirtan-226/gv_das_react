@@ -62,7 +62,7 @@ function computeSpans(rows) {
   })
 }
 
-export default function WorkerTable({ rows }) {
+export default function KaryakarTable({ rows, showXetra = true }) {
   const computed = useMemo(() => computeSpans(normalizeRows(rows)), [rows])
 
   if (rows.length === 0) {
@@ -76,30 +76,50 @@ export default function WorkerTable({ rows }) {
           <th>Sr.</th>
           <th>Sabha</th>
           <th>Mandal</th>
-          <th>Worker Name</th>
+          <th>Karyakar Name</th>
           <th>Role</th>
           <th>Mobile</th>
         </tr>
       </thead>
       <tbody>
         {/* ── Bharuch Xetra ── */}
-        <tr>
-          <td className="serial-cell"></td>
-          <td className="sabha-cell"></td>
-          <td className="mandal-cell" rowSpan={2}>
-            <span className="mandal-name">Bharuch Xetra</span>
-          </td>
-          <td>Dhaval Bhatt</td>
-          <td>Nirdeshak</td>
-          <td className="mobile-cell"><a href="tel:+918128991380">81289 91380</a></td>
-        </tr>
-        <tr>
-          <td className="serial-cell"></td>
-          <td className="sabha-cell"></td>
-          <td>Dipen Patel</td>
-          <td>Xetriya Karyakar</td>
-          <td className="mobile-cell"><a href="tel:+919974034938">99740 34938</a></td>
-        </tr>
+        {showXetra ? <>
+          <tr>
+            <td className="serial-cell"></td>
+            <td className="sabha-cell"></td>
+            <td className="mandal-cell" rowSpan={2}>
+              <span className="mandal-name">Bharuch Xetra</span>
+            </td>
+            <td>Dhaval Bhatt</td>
+            <td>Nirdeshak</td>
+            <td className="mobile-cell"><a href="tel:+918128991380">81289 91380</a></td>
+          </tr>
+          <tr>
+            <td className="serial-cell"></td>
+            <td className="sabha-cell"></td>
+            <td>Dipen Patel</td>
+            <td>Xetriya Karyakar</td>
+            <td className="mobile-cell"><a href="tel:+919974034938">99740 34938</a></td>
+          </tr>
+        </> : <>
+          <tr>
+            <td className="serial-cell"></td>
+            <td className="sabha-cell"></td>
+            <td className="mandal-cell" rowSpan={2}>
+              <span className="mandal-name">Bharuch Xetra</span>
+            </td>
+            <td>Dipixaben K Patel</td>
+            <td>Nirdeshak</td>
+            <td className="mobile-cell"><a href="tel:+919662043245">96620 43245</a></td>
+          </tr>
+          <tr>
+            <td className="serial-cell"></td>
+            <td className="sabha-cell"></td>
+            <td>Shilpaben R Patel</td>
+            <td>Xetriya Karyakar</td>
+            <td className="mobile-cell"><a href="tel:+919998816135">99988 16135</a></td>
+          </tr>
+        </>}
         {computed.map((r, i) => (
           <tr key={i} data-day={r.day}>
             {r.daySpan > 0 && (

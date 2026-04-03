@@ -1,9 +1,73 @@
+export const yuvatiRows = [
+  // ── DAY 1 (Monday) ─────────────────────────────────────────────────────
+  { day: 1, sabha: 'Monday',    mandal: 'Zadeshwer',     name: 'Bhavisha Patel',         role: 'nirikshak', mobile: '9586840221' },
+  { day: 1, sabha: 'Monday',    mandal: '',               name: 'Pooja Bharucha',         role: 'sanchalak', mobile: '9081911442' },
+  { day: 1, sabha: 'Monday',    mandal: 'Ayodhyanagar',  name: 'Avanika Parmar',         role: 'nirikshak', mobile: '9213003429' },
+  { day: 1, sabha: 'Monday',    mandal: '',               name: 'Kavya Barot',            role: 'sanchalak', mobile: '9016713378' },
+  { day: 1, sabha: 'Monday',    mandal: 'Shaktinath 2',  name: 'Avanika Parmar',         role: 'nirikshak', mobile: '9213003429' },
+  { day: 1, sabha: 'Monday',    mandal: '',               name: 'Padma Surati',           role: 'sanchalak', mobile: '8980300683' },
+
+  // ── DAY 2 (Tuesday) ────────────────────────────────────────────────────
+  { day: 2, sabha: 'Tuesday',   mandal: 'Shaktinath 1',  name: 'Hetal Mistry',           role: 'nirikshak', mobile: '8141828812' },
+  { day: 2, sabha: 'Tuesday',   mandal: '',               name: 'Hiral Prajapati',        role: 'sanchalak', mobile: '7096664255' },
+  { day: 2, sabha: 'Tuesday',   mandal: 'Mangaltirth',   name: 'Dixita Prajapati',       role: 'nirikshak', mobile: '9998991289' },
+  { day: 2, sabha: 'Tuesday',   mandal: '',               name: 'Vishwa Patel',           role: 'sanchalak', mobile: '7621066322' },
+  { day: 2, sabha: 'Tuesday',   mandal: 'Chakla',        name: 'Hetal Mistry',           role: 'nirikshak', mobile: '8141828812' },
+  { day: 2, sabha: 'Tuesday',   mandal: '',               name: 'Komal Rana',             role: 'sanchalak', mobile: '9904960365' },
+
+  // ── DAY 3 (Wednesday) ──────────────────────────────────────────────────
+  { day: 3, sabha: 'Wednesday', mandal: 'Pramukhpark',   name: 'Arati Joshi',            role: 'nirikshak', mobile: '9408770117' },
+  { day: 3, sabha: 'Wednesday', mandal: '',               name: 'Nikita Barot',           role: 'sanchalak', mobile: '7600069806' },
+  { day: 3, sabha: 'Wednesday', mandal: 'Krishnanagar',  name: 'Kinjal Patel',           role: 'nirikshak', mobile: '9913711196' },
+  { day: 3, sabha: 'Wednesday', mandal: '',               name: 'Diya Patel',             role: 'sanchalak', mobile: '6352774983' },
+
+  // ── DAY 4 (Thursday) ───────────────────────────────────────────────────
+  { day: 4, sabha: 'Thursday',  mandal: 'Vaibhav',       name: 'Priti Patel',            role: 'nirikshak', mobile: '9974037349' },
+  { day: 4, sabha: 'Thursday',  mandal: '',               name: 'Jigishaben Modhiya',    role: 'sanchalak', mobile: '9909979386' },
+  { day: 4, sabha: 'Thursday',  mandal: 'Sahjanand',     name: 'Krupa Bhatt',            role: 'nirikshak', mobile: '9427835545' },
+  { day: 4, sabha: 'Thursday',  mandal: '',               name: 'Shivani Parekh',        role: 'sanchalak', mobile: '9265982968' },
+
+  // ── DAY 5 (Friday) ─────────────────────────────────────────────────────
+  { day: 5, sabha: 'Friday',    mandal: 'Shriji Sadan',  name: 'Ragini Vaidhy',          role: 'nirikshak', mobile: '9998995118' },
+  { day: 5, sabha: 'Friday',    mandal: '',               name: 'Jagruti Patel',          role: 'sanchalak', mobile: '9106376822' },
+  { day: 5, sabha: 'Friday',    mandal: 'Manas Nagar',   name: 'Kruti Patel',            role: 'nirikshak', mobile: '9724501276' },
+  { day: 5, sabha: 'Friday',    mandal: '',               name: 'Dharmishtha Parmar',    role: 'sanchalak', mobile: '9998990328' },
+  { day: 5, sabha: 'Friday',    mandal: 'Surbhi',        name: 'Rekhaben Valand',        role: 'nirikshak', mobile: '7600021233' },
+  { day: 5, sabha: 'Friday',    mandal: '',               name: 'Nishal Bhatt',           role: 'sanchalak', mobile: '7573994480' },
+
+  // ── DAY 6 (Saturday) ───────────────────────────────────────────────────
+  { day: 6, sabha: 'Saturday',  mandal: 'Mangleshwer',   name: 'Vaishali Bhavshar',      role: 'nirikshak', mobile: '9409264605' },
+  { day: 6, sabha: 'Saturday',  mandal: '',               name: 'Swati Patel',            role: 'sanchalak', mobile: '9714833581' },
+  { day: 6, sabha: 'Saturday',  mandal: 'Shri Niketan',  name: 'Kumudiben Bhadreshiya',  role: 'nirikshak', mobile: '9428106580' },
+  { day: 6, sabha: 'Saturday',  mandal: '',               name: 'Kalpana Patel',          role: 'sanchalak', mobile: '9879001674' },
+  { day: 6, sabha: 'Saturday',  mandal: 'Narmada Nagar', name: 'Kunjan Vara',            role: 'nirikshak', mobile: '8511150601' },
+  { day: 6, sabha: 'Saturday',  mandal: '',               name: 'Pinkal Sutariya',        role: 'sanchalak', mobile: '7490033916' },
+  { day: 6, sabha: 'Saturday',  mandal: 'Radha Krishna', name: 'Ami Patel',              role: 'nirikshak', mobile: '7046422210' },
+  { day: 6, sabha: 'Saturday',  mandal: '',               name: 'Dinal Patel',            role: 'sanchalak', mobile: '9737323509' },
+  { day: 6, sabha: 'Saturday',  mandal: 'Aalipura',      name: 'Sapana Patel',           role: 'nirikshak', mobile: '9879591668' },
+  { day: 6, sabha: 'Saturday',  mandal: '',               name: 'Dipika Kachhiya',        role: 'sanchalak', mobile: '8401799062' },
+
+  // ── DAY 7 (Sunday) ─────────────────────────────────────────────────────
+  { day: 7, sabha: 'Sunday',    mandal: 'Shriji Pravesh', name: 'Ragini Vaidhy',         role: 'nirikshak', mobile: '9998995118' },
+  { day: 7, sabha: 'Sunday',    mandal: '',               name: 'Dhruvi Patel',           role: 'sanchalak', mobile: '8511073388' },
+]
+
 export const DAYS = [
   { id: 1, label: 'Day 1' },
   { id: 2, label: 'Day 2' },
   { id: 3, label: 'Day 3' },
   { id: 4, label: 'Day 4' },
   { id: 5, label: 'Day 5' },
+];
+
+export const YUVATI_DAYS = [
+  { id: 1, label: 'Day 1' },
+  { id: 2, label: 'Day 2' },
+  { id: 3, label: 'Day 3' },
+  { id: 4, label: 'Day 4' },
+  { id: 5, label: 'Day 5' },
+  { id: 6, label: 'Day 6' },
+  { id: 7, label: 'Day 7' },
 ];
 
 export const rows = [

@@ -1,6 +1,4 @@
-import { DAYS } from '../data'
-
-export default function Tabs({ activeDay, onDayChange }) {
+export default function Tabs({ activeDay, onDayChange, days }) {
   return (
     <nav className="tabs">
       <button
@@ -9,7 +7,7 @@ export default function Tabs({ activeDay, onDayChange }) {
       >
         All
       </button>
-      {DAYS.map(d => (
+      {days.map(d => (
         <button
           key={d.id}
           className={`tab-btn ${activeDay === String(d.id) ? 'active' : ''}`}
