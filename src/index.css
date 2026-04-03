@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;600;700&family=Cinzel+Decorative:wght@400;700&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans Gujarati', 'Segoe UI', sans-serif;
+  background: radial-gradient(ellipse at top left, #2d1b69 0%, #0f0a2e 40%, #1a0a1e 100%);
+  min-height: 100vh;
+  padding: 24px 16px 48px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(212,168,39,.07) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(212,168,39,.07) 0%, transparent 50%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Ccircle cx='60' cy='60' r='55' stroke='%23d4a827' stroke-width='0.3' fill='none' opacity='0.15'/%3E%3Ccircle cx='60' cy='60' r='40' stroke='%23d4a827' stroke-width='0.3' fill='none' opacity='0.12'/%3E%3Ccircle cx='60' cy='60' r='25' stroke='%23d4a827' stroke-width='0.3' fill='none' opacity='0.1'/%3E%3Cline x1='5' y1='60' x2='115' y2='60' stroke='%23d4a827' stroke-width='0.2' opacity='0.1'/%3E%3Cline x1='60' y1='5' x2='60' y2='115' stroke='%23d4a827' stroke-width='0.2' opacity='0.1'/%3E%3C/svg%3E");
+  background-size: auto, auto, 120px 120px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+@media print {
+  body { background: white !important; padding: 0 !important; }
+  body::before { display: none !important; }
+}
