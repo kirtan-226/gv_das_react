@@ -3,7 +3,7 @@ import { rows, yuvatiRows, DAYS, YUVATI_DAYS } from '../data'
 import Header from '../components/Header'
 import Toolbar from '../components/Toolbar'
 import Tabs from '../components/Tabs'
-import KaryakarTable from '../components/karyakarTable'
+import KaryakarTable from '../components/KaryakarTable'
 import Footer from '../components/Footer'
 
 export default function HomePage() {
