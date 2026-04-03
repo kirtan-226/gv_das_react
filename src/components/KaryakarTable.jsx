@@ -62,7 +62,7 @@ function computeSpans(rows) {
   })
 }
 
-export default function KaryakarTable({ rows, showXetra = true }) {
+export default function karyakarTable({ rows, showXetra = true }) {
   const computed = useMemo(() => computeSpans(normalizeRows(rows)), [rows])
 
   if (rows.length === 0) {
