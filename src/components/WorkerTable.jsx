@@ -91,14 +91,14 @@ export default function WorkerTable({ rows }) {
           </td>
           <td>Dhaval Bhatt</td>
           <td>Nirdeshak</td>
-          <td className="mobile-cell"><a href="tel:+918128991380">+91 81289 91380</a></td>
+          <td className="mobile-cell"><a href="tel:+918128991380">81289 91380</a></td>
         </tr>
         <tr>
           <td className="serial-cell"></td>
           <td className="sabha-cell"></td>
           <td>Dipen Patel</td>
           <td>Xetriya Karyakar</td>
-          <td className="mobile-cell"><a href="tel:+919974034938">+91 99740 34938</a></td>
+          <td className="mobile-cell"><a href="tel:+919974034938">99740 34938</a></td>
         </tr>
         {computed.map((r, i) => (
           <tr key={i} data-day={r.day}>

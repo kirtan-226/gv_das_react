@@ -1,7 +1,7 @@
 export default function XetraBar() {
   const contacts = [
-    { name: 'Dipen Patel',  mobile: '+919974034938',  display: '+91 99740 34938' },
-    { name: 'Dhaval Bhatt', mobile: '+918128991380',  display: '+91 81289 91380' },
+    { name: 'Dipen Patel',  mobile: '+919974034938',  display: '99740 34938' },
+    { name: 'Dhaval Bhatt', mobile: '+918128991380',  display: '81289 91380' },
   ]
 
   return (
